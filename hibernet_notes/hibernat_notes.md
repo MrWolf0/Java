@@ -16,7 +16,7 @@ Database relationships are the associations between different tables in a relati
 3. Referential integrity: this ensures that the fields in the table from the foreign key correspond to fields in the table from the primary key. If the foreign key does not correspond to an appropriate primary key or the value is null, the referential integrity is violated.Meaning that the database ensure that every foreign key has a valid reference in the primary key's table<br>
 <br>
 There are three main types of relationships between tables in databases: one-to-one, one-to-many and many-to-many. To best understand which relationship type is being used, you first need to understand the data, the tables, and the business rules behind them. If you’re creating tables in a database like MySQL or SQL Server, you can define these relationships when building tables, using primary and foreign keys.<br>
-# one-to-one
+# One-to-one
 It is used to create a relationship between two tables in which a single row of the first table can only be related to one and only one records of a second table.<br>
 # One-to-many database relationship
 Every record in the first table can have multiple corresponding records in the second table. However, every record in the second table corresponds to only one in the first table. A one-to-many relationship is the most common type of database relationship in modern databases.<br>
