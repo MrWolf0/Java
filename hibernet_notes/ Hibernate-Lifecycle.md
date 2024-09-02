@@ -84,5 +84,9 @@ Given an instance of a class that is managed by a persistent context, it can be 
 
 - **Transient** entities exist in heap memory as normal Java objects. Hibernate does not manage transient entities. The persistent context does not track the changes done on them.
 - In simple words, a transient entity has neither any representation in the datastore nor in the current Session.
-- A transient entity is simply a POJO without any identifier.
+- A transient entity is simply a POJO without any identifier So, if we make any changes in the data of the POJO Class then the database table is not altered. Transient objects are independent of Hibernate, and they exist in the heap memory.
+```java
+Transient EmployeeEntity
+EmployeeEntity employee = new EmployeeEntity();
+```
 
