@@ -1,0 +1,137 @@
+import javafx.geometry.Pos;
+import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Font;
+import javafx.scene.text.TextAlignment;
+
+public class FirstTab extends Tab {
+    public FirstTab() {
+
+
+        setText("الحسابات ");
+        setClosable(false);
+       // Font font = Font.loadFont(getClass().getResourceAsStream("/Fonts/Arslan Wessam1.ttf"), 28);
+
+
+
+/* First menu button with its own items */
+        MenuButton menuButton = new MenuButton();
+        menuButton.setId("menuButton");
+        menuButton.setTranslateX(8);
+        menuButton.setText("القائمة\nالاولي");
+        menuButton.setTextAlignment(TextAlignment.CENTER);
+        ImageView imageView = new ImageView( new Image("/images/gears.png"));
+        imageView.setTranslateX(-20);
+        imageView.setFitWidth(18);
+        imageView.setFitHeight(18);
+        menuButton.setGraphic(imageView);
+        menuButton.setAlignment(Pos.CENTER);
+        Menu menu = new Menu("البيانات الاساسية",new ImageView(new Image("/images/home.png")));
+        menu.setId("fileId");
+        MenuItem item1 = new MenuItem("ملف جديد", new ImageView(new Image("/images/new-icon.png")));
+        item1.setId("itemNewFile");
+        MenuItem item2 = new MenuItem("فتح ملف", new ImageView(new Image("/images/open-icon.png")));
+        item2.setId("itemOpen");
+        MenuItem item3 = new MenuItem("حفظ ملف", new ImageView(new Image("/images/save-icon.png")));
+        item3.setId("itemSave");
+        MenuItem item4 = new MenuItem("خروج", new ImageView(new Image("/images/exit-icon.png")));
+        item4.setId("itemExit");
+        menu.getItems().addAll(item1,item2,item3,item4);
+        Menu sales = new Menu("مبيعات",new ImageView(new Image("/images/sales1.png")));
+        sales.setId("salesId");
+/* Creating prunches menu and its items */
+        Menu paid = new Menu("مشتريات",new ImageView(new Image("/images/prunshes.png")));
+        paid.setId("paidId");
+        /* Creating costs menu and its items */
+        Menu coast = new Menu("التكاليف",new ImageView(new Image("/images/costs.png")));
+        menuButton.getItems().addAll(menu,sales,paid);
+
+        /* Second menu button and its own items */
+        MenuButton menuButton1 = new MenuButton("الأرصدة\nالافتتاحية");
+        menuButton1.setId("menuButton1");
+        menuButton1.setTextAlignment(TextAlignment.CENTER);
+        menuButton1.setAlignment(Pos.CENTER);
+        menuButton1.setLayoutX(108);
+        ImageView imageView1 =  new ImageView(new Image("/images/safe.png"));
+        imageView1.setFitWidth(18);
+        imageView1.setFitHeight(18);
+        imageView1.setTranslateX(-10);
+        menuButton1.setGraphic(imageView1);
+        /* label under each menu */
+        Label label1 = new Label();
+        label1.setTranslateX(60);
+        label1.setTranslateY(75);
+        label1.setId("label1");
+        label1.setText("البيانات الأساسية");
+        label1.setAlignment(Pos.CENTER);
+        /* create separator between buttons */
+        Separator separator = new Separator();
+        separator.setId("sp");
+        separator.setTranslateX(233);
+ /* Third menu button and its items */
+        MenuButton menuButton2 = new MenuButton(" طلبات \n واوامر الصرف");
+        menuButton2.setTextAlignment(TextAlignment.CENTER);
+        menuButton2.setId("menuButton2");
+        menuButton2.setLayoutX(250);
+        ImageView imageView2 = new ImageView( new Image("/images/chart.png"));
+        imageView2.setTranslateX(-15);
+        imageView2.setFitHeight(18);
+        imageView2.setFitWidth(18);
+        menuButton2.setGraphic(imageView2);
+        menuButton2.setAlignment(Pos.CENTER);
+/* Fourth menu button and its items */
+        MenuButton menuButton3 = new MenuButton("سندات الصرف\nوالاستلام ");
+        menuButton3.setTextAlignment(TextAlignment.CENTER);
+        menuButton3.setId("menuButton3");
+        menuButton3.setLayoutX(380);
+        ImageView imageView3 = new ImageView( new Image("/images/chart2.png"));
+        imageView3.setTranslateX(-10);
+        imageView3.setFitWidth(18);
+        imageView3.setFitHeight(18);
+        menuButton3.setGraphic(imageView3);
+        menuButton3.setAlignment(Pos.CENTER);
+/* Fifth menu button and its items */
+        MenuButton menuButton4 = new MenuButton("التسويات");
+        menuButton4.setId("menuButton4");
+        menuButton4.setLayoutX(510);
+        ImageView imageView4 = new ImageView( new Image("/images/check.png"));
+        imageView4.setTranslateX(-10);
+        imageView4.setFitWidth(18);
+        imageView4.setFitHeight(18);
+        menuButton4.setGraphic(imageView4);
+        menuButton4.setAlignment(Pos.CENTER);
+/* Sixth menu button and its items */
+        MenuButton menuButton5 = new MenuButton("قيود اليومية");
+        menuButton5.setId("menuButton5");
+        menuButton5.setLayoutX(650);
+        ImageView imageView5 = new ImageView( new Image("/images/open-book.png"));
+        imageView5.setTranslateX(-10);
+        imageView5.setFitWidth(18);
+        imageView5.setFitHeight(18);
+        menuButton5.setGraphic(imageView5);
+        menuButton5.setAlignment(Pos.CENTER);
+/* Seventh menu button and its items */
+        MenuButton menuButton6 = new MenuButton("اشعارات الخصم\nاوالاضافة");
+        menuButton6.setTextAlignment(TextAlignment.CENTER);
+        menuButton6.setId("menuButton6");
+        menuButton6.setLayoutX(800);
+        ImageView imageView6 = new ImageView( new Image("/images/not.png"));
+        imageView6.setTranslateX(-10);
+        imageView6.setFitWidth(18);
+        imageView6.setFitHeight(18);
+        menuButton6.setGraphic(imageView6);
+        menuButton6.setAlignment(Pos.CENTER);
+
+
+        AnchorPane anchorPane = new AnchorPane();
+        anchorPane.setId("anchorPane");
+        anchorPane.getChildren().addAll(menuButton,menuButton1,label1,separator,menuButton2,menuButton3,menuButton4,menuButton5
+        ,menuButton6);
+        setContent(anchorPane);
+
+    }
+
+
+}

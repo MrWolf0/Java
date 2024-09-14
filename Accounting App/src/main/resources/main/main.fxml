@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<TabPane  maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="200.0" tabMaxWidth="200.0" tabMinHeight="20.0" tabMinWidth="200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HelloController">
+        <Tab closable="false" text="الحسابات">
+                <AnchorPane>
+                        <VBox>
+                                <Separator />
+                                <HBox>
+                                        <fx:include source="first2menuVBOX.fxml" />
+                                        <Separator orientation="VERTICAL" />
+                                        <fx:include source="second2menuVBOX.fxml" />
+                                        <Separator orientation="VERTICAL" />
+                                        <fx:include source="third-menus-partVBOX.fxml" />
+                                        <Separator orientation="VERTICAL" />
+                                        <fx:include source="account_reportes.fxml" />
+                                        <Separator orientation="VERTICAL" />
+                                </HBox>
+                                <Separator maxHeight="0.0" minHeight="3.0" prefHeight="0.0" prefWidth="0.0" style="-fx-border-color: linear-gradient(to left, #0022ff, #00ff00); -fx-border-color: linear-gradient(to right, #0022ff, #00ff00);;" />
+                                <TabPane tabClosingPolicy="UNAVAILABLE">
+                                        <Tab text="قيد يومية">
+                                                <AnchorPane>
+                                                        <VBox>
+                                                                <fx:include source="first-hbox-MiddelPane.fxml" />
+                                                                <Separator maxHeight="0.0" minHeight="3.0" prefHeight="0.0" prefWidth="0.0">
+                                                                    <VBox.margin>
+                                                                        <Insets top="1.0" />
+                                                                    </VBox.margin>
+                                                                </Separator>
+                                                                <fx:include source="after_smallbtns.fxml" />
+                                                                <Separator maxHeight="0.0" minHeight="3.0" prefHeight="0.0" prefWidth="0.0">
+                                                                    <padding>
+                                                                        <Insets top="6.0" />
+                                                                    </padding>
+                                                                </Separator>
+                                                                <fx:include source="third-box-MiddelPane.fxml" />
+                                                                <Separator maxHeight="0.0" minHeight="3.0" prefHeight="0.0" prefWidth="0.0">
+                                                                    <padding>
+                                                                        <Insets top="7.0" />
+                                                                    </padding>
+                                                                </Separator>
+                                                                <fx:include source="fourth-box-MiddelPane.fxml" />
+                                                                <Separator maxHeight="0.0" minHeight="3.0" prefHeight="0.0" prefWidth="0.0" />
+                                                                <TableView fx:id="dataTableView" fixedCellSize="0.0" style="-fx-border-color: black;">
+                                                                    <columns>
+                                                                        <TableColumn fx:id="column1" prefWidth="350.0" text="اسم الحساب " />
+                                                                        <TableColumn  fx:id="column2" prefWidth="180.0" text="مدين" />
+                                                                        <TableColumn  fx:id="column3" prefWidth="180.0" text="دائن" />
+                                                                        <TableColumn  fx:id="column4" prefWidth="120.0" text="كود الحساب" />
+                                                                        <TableColumn  fx:id="column5" prefWidth="150.0" text="الايضاح" />
+                                                                        <TableColumn  fx:id="column6" prefWidth="120.0" text="كود مركز التكلفة" />
+                                                                        <TableColumn  fx:id="column7" prefWidth="100.0" text="الكيان المالي" />
+                                                                        <TableColumn  fx:id="column8" prefWidth="75.0" text="الكود الفرعي" />
+                                                                        <TableColumn  fx:id="column9" prefWidth="150.0" text="الحساب الفرعي " />
+                                                                        <TableColumn  fx:id="column10" prefWidth="75.0" text="CaseID" />
+                                                                        <TableColumn  fx:id="column11" prefWidth="75.0" text="CaseName" />
+                                                                    </columns>
+                                                                    <VBox.margin>
+                                                                        <Insets left="11.0" top="5.0" />
+                                                                    </VBox.margin>
+                                                                </TableView>
+                                                        </VBox>
+                                                </AnchorPane>
+                                        </Tab>
+                                </TabPane>
+                        </VBox>
+                </AnchorPane>
+        </Tab>
+        <Tab text="Untitled Tab 2">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </Tab>
+</TabPane>

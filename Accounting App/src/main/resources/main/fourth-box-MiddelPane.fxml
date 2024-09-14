@@ -1,0 +1,122 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<VBox>
+        <HBox spacing="20.0">
+                <VBox>
+                        <Label contentDisplay="CENTER" text="نوع الحساب" textAlignment="CENTER">
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                        </Label>
+                        <ChoiceBox prefWidth="300.0" />
+                </VBox>
+                <VBox>
+                        <Label contentDisplay="CENTER" text="مدين" textAlignment="CENTER">
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                        </Label>
+                        <TextField />
+                </VBox>
+                <VBox>
+                        <Label contentDisplay="CENTER" text="دائن" textAlignment="CENTER">
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                        </Label>
+                        <TextField />
+                </VBox>
+                <VBox>
+
+                        <Label contentDisplay="CENTER" text="كود الحساب" textAlignment="CENTER">
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                        </Label>
+                        <ChoiceBox prefWidth="150.0" />
+
+                </VBox>
+                <VBox>
+
+                        <Label contentDisplay="CENTER" text="اسم الحساب" textAlignment="CENTER">
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                        </Label>
+                        <ChoiceBox prefWidth="300.0" />
+
+                </VBox>
+                <VBox>
+                        <Label contentDisplay="CENTER" text="البيان" textAlignment="CENTER">
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                        </Label>
+                        <TextField prefWidth="600.0" />
+                </VBox>
+        </HBox>
+        <HBox spacing="20.0">
+                <VBox>
+                        <Label contentDisplay="CENTER" text="كود مركز التكلفة" textAlignment="CENTER">
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                        </Label>
+                        <ChoiceBox prefWidth="150.0" />
+                </VBox>
+                <VBox>
+                        <Label contentDisplay="CENTER" text="مركز التكلفة" textAlignment="CENTER">
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                        </Label>
+                        <ChoiceBox prefWidth="400.0" />
+                </VBox>
+                <VBox>
+                        <Label contentDisplay="CENTER" text="test case" textAlignment="CENTER">
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                        </Label>
+                        <TextField />
+                </VBox>
+                <VBox>
+                        <Label contentDisplay="CENTER" text="رقم السند" textAlignment="CENTER">
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                        </Label>
+                </VBox>
+                <VBox>
+                        <Label contentDisplay="CENTER" text="الكيان المالي " textAlignment="CENTER">
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                        </Label>
+                        <TextField />
+                </VBox>
+                <VBox>
+<!--                        <Label contentDisplay="CENTER" text="البيان" textAlignment="CENTER">
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                        </Label>-->
+                        <!--<TextField prefWidth="600.0" /> -->
+                </VBox>
+                <VBox>
+                        <Label contentDisplay="CENTER" text="رقم مرجعي VAT" textAlignment="CENTER">
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                        </Label>
+                        <TextField />
+                </VBox>
+        </HBox>
+    <padding>
+        <Insets left="10.0" />
+    </padding>
+</VBox>

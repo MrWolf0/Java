@@ -1,0 +1,65 @@
+/*
+    Created on : Nov 22, 2023, 6:02:39 PM
+    Author     : Testing
+*/
+
+#menuButton0
+{
+
+    -fx-background-color: transparent;
+    -fx-font-weight: normal;
+
+
+}
+#Button0
+{
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: black;
+    -fx-background-color: transparent;
+
+}
+#menu0
+{
+    -fx-pref-width: 120px;
+    -fx-alignment: center;
+}
+
+#sp
+{
+    -fx-min-width: 1px;
+    -fx-pref-width: 1px;
+    -fx-max-height: 80px;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-background-color: black;
+}
+#username
+{
+    -fx-font-family: alhurra;
+    -fx-font-weight: normal;
+    -fx-font-size: 10px;
+
+}
+#password
+{
+    -fx-font-family: alhurra;
+    -fx-font-weight: normal;
+    -fx-font-size: 10px;
+}
+@font-face
+{
+    font-family: 'alhurra';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../Fonts/alhurra.ttf');
+}
+
+#Button0:pressed {
+    -fx-background-color: #7d80d5;
+    -fx-border-color: #aaaaaa;
+}
+#checkUP
+{
+    -fx-background-color: #61a96a;
+    -fx-pref-height: 40px;
+}

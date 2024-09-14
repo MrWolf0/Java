@@ -1,0 +1,123 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Label?>
+<VBox>
+        <HBox>
+                <MenuButton id="menuButton0" alignment="BOTTOM_CENTER"
+                            contentDisplay="TOP" graphicTextGap="0.0"
+                            mnemonicParsing="false" prefHeight="70.0"
+                            stylesheets="@styles/Styles.css"
+                            text="اضافة&#10;اصل" textAlignment="CENTER"
+                            textOverrun="CLIP">
+                    <graphic>
+                        <ImageView fitHeight="16" fitWidth="16"
+                                   preserveRatio="true">
+                                <Image url="@images/file.png">
+                                </Image>
+                        </ImageView>
+                    </graphic>
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1"/>
+                        <MenuItem mnemonicParsing="false" text="Action 2"/>
+                    </items>
+                    <font>
+                        <Font name="Dubai Regular" size="12.0"/>
+                    </font>
+                </MenuButton>
+                <MenuButton id="menuButton0" alignment="BOTTOM_CENTER"
+                            contentDisplay="TOP" graphicTextGap="0.0"
+                            mnemonicParsing="false" prefHeight="70.0"
+                            stylesheets="@styles/Styles.css"
+                            text="اهلاك &#10;الاصول" textAlignment="CENTER"
+                            textOverrun="CLIP">
+                    <graphic>
+                        <ImageView fitHeight="16" fitWidth="16"
+                                   preserveRatio="true">
+                                <Image url="@images/down.png">
+                                </Image>
+                        </ImageView>
+                    </graphic>
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1"/>
+                        <MenuItem mnemonicParsing="false" text="Action 2"/>
+                    </items>
+                    <font>
+                        <Font name="Dubai Regular" size="12.0"/>
+                    </font>
+                </MenuButton>
+                <MenuButton id="menuButton0" alignment="BOTTOM_CENTER"
+                            contentDisplay="TOP" graphicTextGap="0.0"
+                            mnemonicParsing="false" prefHeight="70.0"
+                            stylesheets="@styles/Styles.css"
+                            text="بيانات&#10;الاصول" textAlignment="CENTER"
+                            textOverrun="CLIP">
+                    <graphic>
+                        <ImageView fitHeight="16" fitWidth="16"
+                                   preserveRatio="true">
+                                <Image url="@images/cv.png">
+                                </Image>
+                        </ImageView>
+                    </graphic>
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1"/>
+                        <MenuItem mnemonicParsing="false" text="Action 2"/>
+                    </items>
+                    <font>
+                        <Font name="Dubai Regular" size="12.0"/>
+                    </font>
+                </MenuButton>
+                <MenuButton id="menuButton0" alignment="BOTTOM_CENTER"
+                            contentDisplay="TOP" graphicTextGap="0.0"
+                            mnemonicParsing="false" prefHeight="70.0"
+                            stylesheets="@styles/Styles.css"
+                            text="بيان&#10;اهلاكات الاصول"
+                            textAlignment="CENTER" textOverrun="CLIP">
+                    <graphic>
+                        <ImageView fitHeight="16" fitWidth="16"
+                                   preserveRatio="true">
+                                <Image url="@images/c12.png">
+                                </Image>
+                        </ImageView>
+                    </graphic>
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1"/>
+                        <MenuItem mnemonicParsing="false" text="Action 2"/>
+                    </items>
+                    <font>
+                        <Font name="Dubai Regular" size="12.0"/>
+                    </font>
+                </MenuButton>
+                <MenuButton id="menuButton0" alignment="BOTTOM_CENTER"
+                            contentDisplay="TOP" graphicTextGap="0.0"
+                            mnemonicParsing="false" prefHeight="70.0"
+                            stylesheets="@styles/Styles.css"
+                            text="استبعاد&#10;اصل" textAlignment="CENTER"
+                            textOverrun="CLIP">
+                    <graphic>
+                        <ImageView fitHeight="16" fitWidth="16"
+                                   preserveRatio="true">
+                                <Image url="@images/x.png">
+                                </Image>
+                        </ImageView>
+                    </graphic>
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1"/>
+                        <MenuItem mnemonicParsing="false" text="Action 2"/>
+                    </items>
+                    <font>
+                        <Font name="Dubai Regular" size="12.0"/>
+                    </font>
+                </MenuButton>
+        </HBox>
+        <Separator minHeight="0.0" minWidth="0.0" prefHeight="0.0"
+                   prefWidth="0.0"
+                   style="-fx-border-color: linear-gradient(to left, #0022ff, #00ff00); -fx-border-color: linear-gradient(to right, #0022ff, #00ff00);;"/>
+        <Label text="الاصول " textAlignment="CENTER" textOverrun="CLIP"
+               translateX="181.0"/>
+</VBox>

@@ -1,0 +1,33 @@
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import java.time.chrono.HijrahChronology?>
+<HBox spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+        <Label alignment="TOP_LEFT" graphicTextGap="0.0" text="اسم اليومية">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </Label>
+        <DatePicker prefWidth="120">
+        </DatePicker>
+        <Label text="ميلادي" translateX="-13.0" />
+            <DatePicker fx:id="test" prefWidth="120" >
+                <chronology>
+                    <HijrahChronology fx:constant="INSTANCE"/>
+                </chronology>
+            </DatePicker>
+        <Label text="هجري" translateX="-10.0" />
+        <Label text="العملة" translateX="15.0" />
+        <ChoiceBox prefWidth="150.0" />
+        <Button mnemonicParsing="false" text="موافق" />
+    <padding>
+        <Insets left="10.0" />
+    </padding>
+    <VBox.margin>
+        <Insets bottom="3.0" top="9.0" />
+    </VBox.margin>
+</HBox>

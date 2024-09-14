@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- HBox is used to lay out children in a horizontal row -->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HelloController">
+    <!-- Button to copy a record -->
+    <Button id="Button0" contentDisplay="TOP" graphicTextGap="0.0" mnemonicParsing="false" onMouseClicked="#copyElqaad" stylesheets="@styles/Styles.css" text="نسخ القيد">
+        <graphic>
+            <!-- ImageView for the copy icon -->
+            <ImageView fitHeight="16" fitWidth="16" preserveRatio="true">
+                <Image url="@images/copy.png" />
+            </ImageView>
+        </graphic>
+        <font>
+            <!-- Font style for the button text -->
+            <Font name="Ebrima" size="12.0" />
+        </font>
+    </Button>
+    <!-- Button to add a new record -->
+    <Button id="Button0" contentDisplay="TOP" graphicTextGap="0.0" mnemonicParsing="false" stylesheets="@styles/Styles.css" text="جيديد">
+        <graphic>
+            <!-- ImageView for the add icon -->
+            <ImageView fitHeight="16" fitWidth="16" preserveRatio="true">
+                <Image url="@images/add.png" />
+            </ImageView>
+        </graphic>
+        <font>
+            <!-- Font style for the button text -->
+            <Font name="Ebrima" size="12.0" />
+        </font>
+    </Button>
+    <!-- Button to save a record -->
+    <Button id="Button0" contentDisplay="TOP" graphicTextGap="0.0" mnemonicParsing="false" stylesheets="@styles/Styles.css" text="حفظ">
+        <graphic>
+            <!-- ImageView for the save icon -->
+            <ImageView fitHeight="16" fitWidth="16" preserveRatio="true">
+                <Image url="@images/save-icon.png" />
+            </ImageView>
+        </graphic>
+        <font>
+            <!-- Font style for the button text -->
+            <Font name="Ebrima" size="12.0" />
+        </font>
+    </Button>
+    <!-- Button to delete a record -->
+    <Button id="Button0" contentDisplay="TOP" graphicTextGap="0.0" mnemonicParsing="false" stylesheets="@styles/Styles.css" text="حذف">
+        <graphic>
+            <!-- ImageView for the delete icon -->
+            <ImageView fitHeight="16" fitWidth="16" preserveRatio="true">
+                <Image url="@images/x.png" />
+            </ImageView>
+        </graphic>
+        <font>
+            <!-- Font style for the button text -->
+            <Font name="Ebrima" size="12.0" />
+        </font>
+    </Button>
+    <!-- Button to edit a record -->
+    <Button id="Button0" contentDisplay="TOP" graphicTextGap="0.0" mnemonicParsing="false" stylesheets="@styles/Styles.css" text="تعديل">
+        <graphic>
+            <!-- ImageView for the edit icon -->
+            <ImageView fitHeight="16" fitWidth="16" preserveRatio="true">
+                <Image url="@images/edit.png" />
+            </ImageView>
+        </graphic>
+        <font>
+            <!-- Font style for the button text -->
+            <Font name="Ebrima" size="12.0" />
+        </font>
+    </Button>
+    <!-- Button to print a record -->
+    <Button id="Button0" contentDisplay="TOP" graphicTextGap="0.0" mnemonicParsing="false" stylesheets="@styles/Styles.css" text="طباعة">
+        <graphic>
+            <!-- ImageView for the print icon -->
+            <ImageView fitHeight="16" fitWidth="16" preserveRatio="true">
+                <Image url="@images/print.png" />
+            </ImageView>
+        </graphic>
+        <font>
+            <!-- Font style for the button text -->
+            <Font name="Ebrima" size="12.0" />
+        </font>
+    </Button>
+    <!-- Additional buttons (placeholders) -->
+    <Button mnemonicParsing="false" text="Button" />
+    <Button mnemonicParsing="false" text="Button" />
+    <Button mnemonicParsing="false" text="Button" />
+    <Button mnemonicParsing="false" text="Button" />
+    <Button mnemonicParsing="false" text="Button" />
+    <Button mnemonicParsing="false" text="Button" />
+    <!-- Padding around the HBox -->
+    <padding>
+        <Insets left="10.0" />
+    </padding>
+</HBox>
